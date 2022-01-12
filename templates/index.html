@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Home page</title>
+    </head>
+    <body>
+        <h1> Welcome to Benjamin Tieu's Back-End Coding Assignment!</h1>
+        <h2> Please try localhost:8080/data to add the sample sensor data </h2>
+        <h2> localhost:8080/statistics/sensor_id get statistics on server data </h2>
+        <h2> localhost:8080/statistics/sensor_id with delete to remove server id data </h2>
+        <h2> localhost:8080/healthz to see if the server is ready to receive requests </h2>
+        <h2>You requested localhost:8080/{{content}}</h2>
+        <div class="container"></div>
+        <script>
+            const jsonfile = JSON.parse(jsonfile|tojson);
+            console.log(jsonfile);
+            document.querySelector(".container").innerHTML = JSON.stringify(jsonfile, null, 2);
+        </script>
+    </body>
+</html>
